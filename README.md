@@ -6,19 +6,19 @@
 
 2. We're interested in extracting the following data:
 
-  Inclusion criteria:
- - COVID-19 indication
- - Antibody treatments, combination treatments involving antibodies
+   Inclusion criteria:
+   - COVID-19 indication
+   - Antibody treatments, combination treatments involving antibodies
 
-  Exclusion criteria:
- - Entries describing preclinical or clinical development of diagnostic antibodies, polyclonal antibodies, convalescent plasma therapies, immune globulin intravenous therapies (IGIV), vaccines, small molecules, and recombinant proteins other than immunoglobin (Ig), Ig fragments, and Ig fusion proteins were removed from our collection. Studies and clinical trials without explicitly stating COVID-19 or SARS-CoV-2 as their indication or target were also eliminated
+   Exclusion criteria:
+   - Entries describing preclinical or clinical development of diagnostic antibodies, polyclonal antibodies, convalescent plasma therapies, immune globulin intravenous therapies (IGIV), vaccines, small molecules, and recombinant proteins other than immunoglobin (Ig), Ig fragments, and Ig fusion proteins were removed from our collection. Studies and clinical trials without explicitly stating COVID-19 or SARS-CoV-2 as their indication or target were also eliminated
 
 
 3. Shown below are some useful resources on the JSON data from "full-study" queries. **Note that NOT ALL of these fields will be available for an unique study, so it is recommended to use `try...except` to avoid extracting data from a non-existent field**
 
- - [List of study fields](https://clinicaltrials.gov/api/info/study_fields_list)
- - [Empty structure of JSON returned from a full-study query](https://clinicaltrials.gov/api/info/study_structure)
- - [Search areas](https://clinicaltrials.gov/api/info/search_areas) : Note that regardless of the hierarchy of the fields in JSON, you can use the search areas directly in the `expr` param (see code)
+   - [List of study fields](https://clinicaltrials.gov/api/info/study_fields_list)
+   - [Empty structure of JSON returned from a full-study query](https://clinicaltrials.gov/api/info/study_structure)
+   - [Search areas](https://clinicaltrials.gov/api/info/search_areas) : Note that regardless of the hierarchy of the fields in JSON, you can use the search areas directly in the `expr` param (see code)
 
 4. Caveat: Manual inspection of the returned results from the script is strongly recommended to ensure relevancy.
 
